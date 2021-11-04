@@ -17,7 +17,7 @@ class CreateEmployeesTable extends Migration
             $table->increments('id');
             $table->integer('employee_id')->unsigned()->index()->nullable();
             $table->foreign('employee_id')->references('id')->on('employees');
-            $table->integer('level');
+            $table->integer('level')->nullable();
             $table->string('surname');
             $table->string('name');
             $table->string('patronymic');
