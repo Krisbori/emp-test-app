@@ -2,10 +2,10 @@
 
 edit .env
 
-php artisan key:generate
-
-php artisan migrate:fresh --seed
-
 composer install
 
-npm istall
+npm install
+
+php artisan migrate:refresh --seed
+
+php artisan key:generate
